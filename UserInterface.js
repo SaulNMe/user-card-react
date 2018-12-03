@@ -24,16 +24,16 @@ export default class UserInterface extends Component {
   	}
 
   	addUser = () => {
-    let addUserData = this.state.data
-    let id = addUserData[addUserData.length-1].id + 1
+	    let addUserData = this.state.data
+	    let id = addUserData[addUserData.length-1].id + 1
 
-    addUserData.push({
-              id,
-              first_name:'Loquillo',
-              last_name: 'el chido'});
-    this.setState({
-          data: addUserData})
-    console.log('Hola');
+	    addUserData.push({
+	              id,
+	              first_name:'Loquillo',
+	              last_name: 'el chido'});
+	    this.setState({
+	          data: addUserData})
+	    console.log('Hola');
   	}
   	
 	render () {
@@ -51,7 +51,7 @@ export default class UserInterface extends Component {
 		          }
 		        </ul>
         		<AddButton 
-          			onClick={this.addUser}
+          			onAdd={this.addUser}
           			label="Añadir Usuario"
         		/>
       		</div>

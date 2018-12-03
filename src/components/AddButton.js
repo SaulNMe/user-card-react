@@ -6,6 +6,6 @@ export default class AddButton extends Component {
 	}
 	
   	render(){
-    	return <button className="addButton" onClick={this.props.onClick}>{this.props.label}</button>
+    	return <button className="addButton" onClick={this.props.onUserForm}>{this.props.label}</button>
   	}
 }
